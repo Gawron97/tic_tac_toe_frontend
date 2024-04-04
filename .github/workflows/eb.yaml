@@ -34,7 +34,7 @@ jobs:
           flags: 'g'
 
       - name: Deploy to EB
-        uses: Gawron97/tic_tac_toe_frontend@v1
+        uses: Gawron97/tic_tac_toe_frontend@v2
         with:
          #  input the credentials you used to setup AWS CLI and credentials for the application environment
           aws_access_key: "${{ secrets.ACCESS_KEY }}"
