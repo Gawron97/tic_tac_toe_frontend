@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest # the OS your job should run on
     strategy:
       matrix:
-        node-version: [21.x]
+        node-version: [20.x]
     steps:
       - name: Checkout Latest Repo
         # checks out your repository under the GitHub workspace so that your workflow can access it
@@ -34,7 +34,7 @@ jobs:
           flags: 'g'
 
       - name: Deploy to EB
-        uses: einaregilsson/beanstalk-deploy@v21
+        uses: Gawron97/tic_tac_toe_frontend
         with:
          #  input the credentials you used to setup AWS CLI and credentials for the application environment
           aws_access_key: "${{ secrets.ACCESS_KEY }}"
