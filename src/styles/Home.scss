@@ -1,0 +1,34 @@
+.Home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #282c34; /* zmieniony kolor tła na ciemniejszy */
+    padding: 40px; /* dodany padding dla lepszego rozmieszczenia */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* dodany lekki cień dla głębi */
+    border-radius: 8px; /* dodane zaokrąglenie rogów */
+
+    h1 {
+        color: #76e2fe; /* zmieniony kolor na bardziej subtelny odcień niebieskiego */
+        text-transform: uppercase; /* tekst zmieniony na wielkie litery */
+        letter-spacing: 2px; /* dodana większa odległość między literami */
+        font-weight: bold; /* czcionka pogrubiona */
+        text-shadow: 2px 2px #000; /* dodany cień do tekstu */
+        margin-bottom: 20px; /* dodany margines od dołu */
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin-top: 20px;
+        padding: 20px; /* dodany padding do formularza */
+        background-color: #20232a; /* zmieniony kolor tła formularza */
+        border-radius: 8px; /* dodane zaokrąglenie rogów formularza */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* dodany cień dla lepszego efektu */
+        width: 100%; /* formularz rozciągnięty do pełnej dostępnej szerokości */
+        max-width: 500px; /* maksymalna szerokość formularza, aby nie był zbyt szeroki na dużych ekranach */
+    }
+}
